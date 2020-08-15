@@ -10,11 +10,14 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "express": "^4.17.1",
+    "fuse-box": "^3.7.1",
     "jest": "^26.4.0",
+    "terser": "^5.1.0",
     "ts-jest": "^26.2.0",
     "ts-node-dev": "^1.0.0-pre.57",
     "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "uglify-js": "^3.10.1"
   },
   "name": "c19rb",
   "version": "1.0.0",
@@ -24,5 +27,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --ignore-watch node_modules --no-notify src/server.ts"
+  },
+  "dependencies": {
+    "dotenv-safe": "^8.2.0",
+    "twilio": "^3.48.2"
   }
 }
